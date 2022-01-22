@@ -63,7 +63,7 @@ class TestVarasto(unittest.TestCase):
 
     def test_ottaminen_negatiivisella_ei_onnistu(self):
         result = self.varasto.ota_varastosta(-10)
-        self.assertAlmostEqual(result, 10)
+        self.assertAlmostEqual(result, 0)
 
     def test_varasto_oliolla_on_str_metodi_toimii(self):
         self.assertEqual(str(self.varasto), "saldo = 0, vielä tilaa 10")
